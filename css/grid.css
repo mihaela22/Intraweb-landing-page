@@ -1,0 +1,191 @@
+/*
+----- TEMPLATE AREAS -----
+.container {
+	height: 100%;
+	display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    	"m h h h h h h h h h h h"
+    	"m c c c c c c c c c c c"
+    	"m f f f f f f f f f f .";
+    grid-gap: 5px;
+}
+
+.header {
+	grid-area: h;
+
+}
+
+.menu {
+	grid-area: m;
+}
+
+.content {
+	grid-area: c;
+
+}
+
+.footer {
+	grid-area: f;
+}*/
+
+/*----- AUTO-FIT AND MINIMAX -----
+.container {
+	display: grid;
+	grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 100px);
+}*/
+
+/*----- IMPLICIT ROWS -----
+
+.container {
+	display: grid;
+	grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    grid-auto-rows: 100px;
+}
+*/
+
+.grid_container {
+	display: grid;
+	grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    }
+
+.grid_container_contact {
+	display: grid;
+	grid-gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+    grid-auto-rows: 185px;
+    grid-auto-flow: dense;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
+
+    .grid_container_contact img {
+    	height: 100px;
+    	width: 100px;
+    	margin-bottom: 3px;
+    }
+
+    .grid_container_contact ul {
+    	
+    	padding-right: 3%;
+    	padding-left: 3%;
+    }
+
+
+
+    ul li.tekst {
+    	padding: 3% 3%; 
+    	color: #2d2d2d;
+    	background-color: rgba(250, 250, 250, 0.6);
+    	line-height: 30px;
+    }
+
+.ref_size {
+	background-repeat: no-repeat;
+    background-position: center;     
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+}
+
+
+.ref_overlay {
+	position: relative;
+	height: 100%;
+	transition: all .3s ease;
+	opacity: 0;
+	background-color: rgba(31, 180, 218, 0.9);
+	text-align: center;
+	color: white;
+}
+.ref_overlay p {
+	padding-top: 50px;
+	font-family: 'Cairo', sans-serif;
+	font-weight: bold;
+}
+
+.ref_size:hover .ref_overlay{
+	height: 100%;
+	opacity: 1;
+}
+
+/*.text {
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	color: white;
+	font-family: sans-serif;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+}*/
+/*.ref_overlayLeft {
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+}
+
+.ref_size:hover .ref_overlayLeft {
+	width: auto;
+}*/
+
+#celergen {
+	background-image: url('../images/reference/celergen-logo-370x224.jpg');
+}
+
+#fatur {
+	background-image: url('../images/reference/fatur-logo1-370x224.jpg');
+}
+
+#glutine {
+	background-image: url('../images/reference/glutine-naslovna-370x224.jpg');
+}
+
+#ipavor {
+	background-image: url('../images/reference/ipavor-logo-370x224.jpg');
+}
+
+#plane {
+	background-image: url('../images/reference/planen-370x224.jpg');
+}
+
+#platin {
+	background-image: url('../images/reference/platin-logo-370x224.jpg');
+}
+
+#sahini {
+	background-image: url('../images/reference/shahini-logo-370x224.jpg');
+}
+
+#domaxrealty {
+	background-image: url('../images/reference/domax-logo-370x224.jpg');
+}
+
+#vatromax {
+	background-image: url('../images/reference/vatromax-naslovna-370x224.jpg');
+}
+
+
+
+.client_icon {
+	display:inline-block;
+    margin:auto;
+}
+
+.client_icon_div {
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	margin-bottom: 100px;
+}
